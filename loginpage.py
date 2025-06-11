@@ -1,7 +1,11 @@
 import streamlit as st
 import requests
+from dotenv import load_dotenv
+import os
 
-API_URL = "https://5a3e-203-189-91-2.ngrok-free.app"
+load_dotenv()
+
+API_URL = os.getenv("API_URL")
 
 st.set_page_config(page_title="Quiz App", layout="centered")
 
